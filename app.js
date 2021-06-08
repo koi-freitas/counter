@@ -25,6 +25,9 @@ btns.forEach(function (btn){
             else if(isNaN(count)){
                 count = 0;
             }
+            else if(count === null){
+                count = 0;
+            }
         }
         if(count > 0){
             value.style.color = 'green';
